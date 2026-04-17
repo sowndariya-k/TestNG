@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-17T06:18:58 IST" name="Default suite" finished-at="2026-04-17T06:18:58 IST" duration-ms="45">
+  <suite started-at="2026-04-17T16:11:51 IST" name="Default suite" finished-at="2026-04-17T16:12:09 IST" duration-ms="18006">
     <groups>
     </groups>
-    <test started-at="2026-04-17T06:18:58 IST" name="Default test" finished-at="2026-04-17T06:18:58 IST" duration-ms="45">
-      <class name="com.TestNG.Selenium.AutomationExample">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="beforeSuite" finished-at="2026-04-17T06:18:58 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="beforeTest" finished-at="2026-04-17T06:18:58 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="beforeClass" finished-at="2026-04-17T06:18:58 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="beforeMethod" finished-at="2026-04-17T06:18:58 IST" duration-ms="0" status="PASS">
+    <test started-at="2026-04-17T16:11:51 IST" name="Default test" finished-at="2026-04-17T16:12:09 IST" duration-ms="18006">
+      <class name="com.TestNG.Selenium.DemoBlaze">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:11:51 IST" name="beforeMethod" finished-at="2026-04-17T16:11:56 IST" duration-ms="4275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="f" finished-at="2026-04-17T06:18:58 IST" duration-ms="6" status="PASS">
+        <test-method signature="validation()[pri:2, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:11:56 IST" name="validation" finished-at="2026-04-17T16:11:58 IST" duration-ms="2664" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="afterMethod" finished-at="2026-04-17T06:18:58 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- validation -->
+        <test-method is-config="true" signature="after()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:11:58 IST" name="after" finished-at="2026-04-17T16:11:58 IST" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="afterClass" finished-at="2026-04-17T06:18:58 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:11:58 IST" name="beforeMethod" finished-at="2026-04-17T16:12:02 IST" duration-ms="3215" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="afterTest" finished-at="2026-04-17T06:18:58 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="invaliduser()[pri:1, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:12:02 IST" name="invaliduser" finished-at="2026-04-17T16:12:03 IST" depends-on-methods="com.TestNG.Selenium.DemoBlaze.validation" duration-ms="1539" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.TestNG.Selenium.AutomationExample@4c12331b]" started-at="2026-04-17T06:18:58 IST" name="afterSuite" finished-at="2026-04-17T06:18:58 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- invaliduser -->
+        <test-method is-config="true" signature="after()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:12:03 IST" name="after" finished-at="2026-04-17T16:12:03 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.TestNG.Selenium.AutomationExample -->
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:12:03 IST" name="beforeMethod" finished-at="2026-04-17T16:12:08 IST" duration-ms="4223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="invalidpassword()[pri:3, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:12:08 IST" name="invalidpassword" finished-at="2026-04-17T16:12:09 IST" duration-ms="1551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidpassword -->
+        <test-method is-config="true" signature="after()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@5b7a5baa]" started-at="2026-04-17T16:12:09 IST" name="after" finished-at="2026-04-17T16:12:09 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.TestNG.Selenium.DemoBlaze -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
