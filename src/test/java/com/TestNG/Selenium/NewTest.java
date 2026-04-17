@@ -20,7 +20,7 @@ public class NewTest {
 	  ChromeOptions options=new ChromeOptions();
 	  driver=new ChromeDriver(options);
 	  options.addArguments("--start-maximize");
-	  options.addArguments("--headless");
+	  //options.addArguments("--headless");
 	  driver.get("https://demoblaze.com/");
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
   }
