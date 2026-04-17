@@ -13,11 +13,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 
 public class DemoBlaze {
 
 	    WebDriver driver;
+	    SoftAssert sa=new SoftAssert();
 
 	    @BeforeMethod
 	    public void beforeMethod() {
@@ -34,16 +36,18 @@ public class DemoBlaze {
 	    public void validation() {
 	  	  driver.findElement(By.id("login2")).click();
 	  	  driver.findElement(By.id("loginusername")).sendKeys("sowndariya");
-	  	  driver.findElement(By.id("loginpassword")).sendKeys("Sow@911!");
+	  	  driver.findElement(By.id("loginpassword")).sendKeys("Sow@911");
 	      driver.findElement(By.xpath("//button[text()='Log in']")).click();
 	      
 	      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	      String actualUser = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nameofuser"))).getText();
 	      Assert.assertEquals(actualUser, "Welcome sowndariya", "Login failed");
 	      System.out.println("Login successful:"+actualUser);
-	      String title = driver.getTitle();
-	      Assert.assertEquals(title, "STORE", "Page title mismatch");
-	      System.out.println("Page Title: "+title);
+	      String actual = driver.getTitle();
+	      String expected="STORE";
+	      sa.assertEquals(actual, expected, "Page title mismatch");
+	      sa.assertAll();
+	      System.out.println("Page Title: "+actual);
 	    }
 	    
 	    
