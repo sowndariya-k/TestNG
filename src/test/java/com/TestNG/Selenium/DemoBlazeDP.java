@@ -46,9 +46,18 @@ public class DemoBlazeDP {
 	    }
 
 	    private void login(String username, String password) {
-	        driver.findElement(By.id("login2")).click();
-	        driver.findElement(By.id("loginusername")).sendKeys(username);
+
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	        WebElement loginBtn = wait.until(
+	                ExpectedConditions.elementToBeClickable(By.id("login2"))
+	        );
+
+	        loginBtn.click();
+
+	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("loginusername"))).sendKeys(username);
 	        driver.findElement(By.id("loginpassword")).sendKeys(password);
+
 	        driver.findElement(By.xpath("//button[text()='Log in']")).click();
 	    }
 
