@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.TestNG.Selenium.TestNGParameter">
+        <methods>
+          <include name="after"/>
+          <include name="ValidLogin"/>
+          <include name="InvalidPassword"/>
+          <include name="InvalidUser"/>
+          <include name="parameterisedTest"/>
+        </methods>
+      </class> <!-- com.TestNG.Selenium.TestNGParameter -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.TestNG.Selenium.TestNGParameter">
+        <methods>
+          <include name="after"/>
+          <include name="ValidLogin"/>
+          <include name="InvalidPassword"/>
+          <include name="InvalidUser"/>
+          <include name="parameterisedTest"/>
+        </methods>
+      </class> <!-- com.TestNG.Selenium.TestNGParameter -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="ValidLogin(failed)">
+    <parameter name="password" value="Sow@911!"/>
+    <parameter name="username" value="sowndariya"/>
+    <classes>
+      <class name="com.TestNG.Selenium.TestNGParameter">
+        <methods>
+          <include name="after"/>
+          <include name="ValidLogin"/>
+          <include name="InvalidPassword"/>
+          <include name="InvalidUser"/>
+          <include name="parameterisedTest"/>
+        </methods>
+      </class> <!-- com.TestNG.Selenium.TestNGParameter -->
+    </classes>
+  </test> <!-- ValidLogin(failed) -->
+  <test thread-count="5" name="InvalidUser(failed)">
+    <parameter name="password" value="Sow@911!"/>
+    <parameter name="username" value="*sk"/>
+    <classes>
+      <class name="com.TestNG.Selenium.TestNGParameter">
+        <methods>
+          <include name="after"/>
+          <include name="ValidLogin"/>
+          <include name="InvalidPassword"/>
+          <include name="InvalidUser"/>
+          <include name="parameterisedTest"/>
+        </methods>
+      </class> <!-- com.TestNG.Selenium.TestNGParameter -->
+    </classes>
+  </test> <!-- InvalidUser(failed) -->
+  <test thread-count="5" name="InvalidPassword(failed)">
+    <parameter name="password" value="wrongPass"/>
+    <parameter name="username" value="sowndariya"/>
+    <classes>
+      <class name="com.TestNG.Selenium.TestNGParameter">
+        <methods>
+          <include name="after"/>
+          <include name="ValidLogin"/>
+          <include name="InvalidPassword"/>
+          <include name="InvalidUser"/>
+          <include name="parameterisedTest"/>
+        </methods>
+      </class> <!-- com.TestNG.Selenium.TestNGParameter -->
+    </classes>
+  </test> <!-- InvalidPassword(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->

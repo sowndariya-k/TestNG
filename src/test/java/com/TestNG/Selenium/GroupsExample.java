@@ -10,6 +10,7 @@ public class GroupsExample {
 		System.out.println("this is the start");
 	}
 	
+	
 	  @Test(groups = "groupA")
 	    public void testMethod1ForGroupA() {
 	        System.out.println("Running test method1 of groupA");
@@ -29,7 +30,7 @@ public class GroupsExample {
 	    public void testMethod2ForGroupB() {
 	        System.out.println("Running test method2 of groupB");
 	    }
-
+	     
 	    @Test(dependsOnGroups = "groupA")
 	    public void dependsOnGroupA() {
 	        System.out.println("Running the dependent test");

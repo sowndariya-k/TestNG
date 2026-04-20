@@ -1,134 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-17T16:25:12 IST" name="Default suite" finished-at="2026-04-17T16:25:22 IST" duration-ms="10113">
+  <suite started-at="2026-04-20T15:57:42 IST" name="Suite" finished-at="2026-04-20T15:57:53 IST" duration-ms="11237">
     <groups>
     </groups>
-    <test started-at="2026-04-17T16:25:12 IST" name="Default test" finished-at="2026-04-17T16:25:22 IST" duration-ms="10113">
-      <class name="com.TestNG.Selenium.DemoBlaze">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@292b08d6]" started-at="2026-04-17T16:25:12 IST" name="beforeMethod" finished-at="2026-04-17T16:25:15 IST" duration-ms="3761" status="PASS">
+    <test started-at="2026-04-20T15:57:42 IST" name="ChromeTest" finished-at="2026-04-20T15:57:53 IST" duration-ms="11237">
+      <class name="com.TestNG.Selenium.DemoBlazeDP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:42 IST" name="setup" finished-at="2026-04-20T15:57:44 IST" duration-ms="2315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validation()[pri:2, instance:com.TestNG.Selenium.DemoBlaze@292b08d6]" started-at="2026-04-17T16:25:15 IST" name="validation" finished-at="2026-04-17T16:25:17 IST" duration-ms="1630" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Wrong password.}
-  (Session info: chrome=147.0.7727.57): Wrong password.
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [abc9b2a626e6b156fcdc7acd2e1fb163, findElement {using=id, value=nameofuser}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\SOWNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63997}, goog:processID: 12276, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63997/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: abc9b2a626e6b156fcdc7acd2e1fb163]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
-  (Session info: chrome=147.0.7727.57): Wrong password.
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [abc9b2a626e6b156fcdc7acd2e1fb163, findElement {using=id, value=nameofuser}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\SOWNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63997}, goog:processID: 12276, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63997/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: abc9b2a626e6b156fcdc7acd2e1fb163
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:222)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:215)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
-at com.TestNG.Selenium.DemoBlaze.validation(DemoBlaze.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:44 IST" name="invalidLoginTest" data-provider="invalidData" finished-at="2026-04-20T15:57:45 IST" duration-ms="1399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[*sk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sow@911!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exist.]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validation -->
-        <test-method is-config="true" signature="after()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@292b08d6]" started-at="2026-04-17T16:25:17 IST" name="after" finished-at="2026-04-17T16:25:17 IST" duration-ms="170" status="PASS">
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:45 IST" name="tearDown" finished-at="2026-04-20T15:57:46 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- after -->
-        <test-method signature="invaliduser()[pri:1, instance:com.TestNG.Selenium.DemoBlaze@292b08d6]" started-at="2026-04-17T16:25:17 IST" name="invaliduser" finished-at="2026-04-17T16:25:17 IST" depends-on-methods="com.TestNG.Selenium.DemoBlaze.validation" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.TestNG.Selenium.DemoBlaze.invaliduser() on instance com.TestNG.Selenium.DemoBlaze@292b08d6 depends on not successfully finished methods 
-[com.TestNG.Selenium.DemoBlaze.validation() on instance com.TestNG.Selenium.DemoBlaze@292b08d6]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.TestNG.Selenium.DemoBlaze.invaliduser() on instance com.TestNG.Selenium.DemoBlaze@292b08d6 depends on not successfully finished methods 
-[com.TestNG.Selenium.DemoBlaze.validation() on instance com.TestNG.Selenium.DemoBlaze@292b08d6]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:46 IST" name="setup" finished-at="2026-04-20T15:57:47 IST" duration-ms="1524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invaliduser -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@292b08d6]" started-at="2026-04-17T16:25:17 IST" name="beforeMethod" finished-at="2026-04-17T16:25:20 IST" duration-ms="2695" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:47 IST" name="invalidLoginTest" data-provider="invalidData" finished-at="2026-04-20T15:57:48 IST" duration-ms="1421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sowndariya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sow@911]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrong password.]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="invalidpassword()[pri:3, instance:com.TestNG.Selenium.DemoBlaze@292b08d6]" started-at="2026-04-17T16:25:20 IST" name="invalidpassword" finished-at="2026-04-17T16:25:22 IST" duration-ms="1581" status="PASS">
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:48 IST" name="tearDown" finished-at="2026-04-20T15:57:49 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidpassword -->
-        <test-method is-config="true" signature="after()[pri:0, instance:com.TestNG.Selenium.DemoBlaze@292b08d6]" started-at="2026-04-17T16:25:22 IST" name="after" finished-at="2026-04-17T16:25:22 IST" duration-ms="221" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:49 IST" name="setup" finished-at="2026-04-20T15:57:51 IST" duration-ms="2004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- com.TestNG.Selenium.DemoBlaze -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:51 IST" name="validLoginTest" data-provider="validData" finished-at="2026-04-20T15:57:53 IST" duration-ms="2028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sowndariya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sow@911!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestNG.Selenium.DemoBlazeDP@7586beff]" started-at="2026-04-20T15:57:53 IST" name="tearDown" finished-at="2026-04-20T15:57:53 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestNG.Selenium.DemoBlazeDP -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
 </testng-results>

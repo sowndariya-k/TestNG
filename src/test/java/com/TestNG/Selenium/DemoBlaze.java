@@ -27,7 +27,7 @@ public class DemoBlaze {
 	  	  ChromeOptions options=new ChromeOptions();
 	  	  driver=new ChromeDriver(options);
 	  	  options.addArguments("--start-maximize");
-	  	  options.addArguments("--headless");
+	  	  //options.addArguments("--headless");
 	  	  driver.get("https://demoblaze.com/");
 	  	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	    }
@@ -36,7 +36,7 @@ public class DemoBlaze {
 	    public void validation() {
 	  	  driver.findElement(By.id("login2")).click();
 	  	  driver.findElement(By.id("loginusername")).sendKeys("sowndariya");
-	  	  driver.findElement(By.id("loginpassword")).sendKeys("Sow@911");
+	  	  driver.findElement(By.id("loginpassword")).sendKeys("Sow@911!");
 	      driver.findElement(By.xpath("//button[text()='Log in']")).click();
 	      
 	      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

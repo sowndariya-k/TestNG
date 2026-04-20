@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.Selenium.DemoBlaze">
+      <class name="com.TestNG.Selenium.DemoBlazeDP">
         <methods>
-          <include name="validation"/>
-          <include name="after"/>
-          <include name="invaliduser"/>
-          <include name="beforeMethod"/>
+          <include name="validLoginTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="invalidLoginTest"/>
         </methods>
-      </class> <!-- com.TestNG.Selenium.DemoBlaze -->
+      </class> <!-- com.TestNG.Selenium.DemoBlazeDP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
